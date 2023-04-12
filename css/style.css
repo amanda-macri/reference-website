@@ -1,4 +1,6 @@
 /*changing font*/
 html {
     font-family: 'Roboto', sans-serif;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
