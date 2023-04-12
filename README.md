@@ -52,4 +52,4 @@
     What unit we use to fractionally divide the element width in CSS Grid property and what are others unit we can use alternatively? (Write a code example)
     What is the area property in CSS grid we use for the child elements?
     Which sub-property of display grid you can use to prevent displaying empty columns. Write a code example of that property.
-    Explain the steps to add google fonts to your CSS file and how will you link it to the html file.
+    Explain the steps to add google fonts to your CSS file and how will you link it to the html file. DONE
