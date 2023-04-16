@@ -16,8 +16,8 @@ Every element will have an open tag, content and close tag. For example, here we
 headings, h1-h6: These are heading tags, marked h1-h6. h1 being the most important header and biggest, h6 being the least important heading and smallest. Ex: `<h1>This is the biggest header</h1>`
 p: This represents a paragraph of text. It isa block element and always starts on a new line. `<p>This is a paragraph.</p>`
 lists: There are two kinds of lists - ordered lists (ol) and unordered lists (ul). Ordered lists would have their list items numbered and unordered lists would have them as bulletin points. To add a list itel, you would use the li tag underneath the first ol or ul tag. 
-a:
-img:
+a: This tag represents a hyperlink. The href atributte is added to the a tag, as it is what indicates where the link will take you.
+img: This tag is used to embed images. It requires two attributes: src, which specifies the path to the image and alt text that will be displayed if there are issues displaying an image.
 q: This tag is used to mark up quotes in other elements, for example a paragraph.
 blockquote: Use this tag for large, standalone quotes.
 cite: This tag is used to mark the source of the quote.
@@ -28,8 +28,9 @@ i: This tag is used when using another language, on a technical term or on a tit
 small: This tag represents side comments and small print. The text in this element will be `<small>smaller</small>` than the normal size of text.
 
 6. Explain block Elements and also explain the list of block elements and why they are used from below:
-html
-head
+Block elements are elements that start a new line of their webpage. It divides websites up into useful sections and parts like its start, middle and end or maybe something that will be displayed on a side bar.
+html: Html block element encases the all of the html.
+head: A container for metadata, placed between the html tag and body tag.
 body: The body tag encases all the main part of the HTML, in other words: the body. It would contain things like headings, paragraphs, images, hyperlinks, tables, lists, etc.
 header: The header is used to block together the introductory part of the text. It will normally include the introduction, company logo and main navigation parts of a website.
 nav
@@ -92,24 +93,58 @@ justify-content: Lets you control the alignment of the element on the main axis 
 align-items: This works on positions on the cross axis, whereas justify-content does the main axis. Some values that can be used are stretch, flex-start, flex-end and center.
 
 16. Explain with code the use of flexbox property on a parent element and also explain the sub properties you might need for the flexbox property
+`.class {`
+    `display: flex;`
+    `flex-direction: row;`
+    `justify-content: flex-end;`
+`}`
+The display: flex is what tells the CSS that we will be using a flexbox. Flex direction tells us what direction the items in the box will be going in. The options are column, column-reverse, row and row-reverse. Justify-content property tells us where the content goes. Is is at the start, middle or end? Is it spaced evenly?
 
 17. Write a code example on how you will use a flexbox property on a parent element with sub properties.
+`.class {`
+    `display: flex;`
+    `flex-direction: row;`
+    `justify-content: flex-end;`
+`}`
+I will use the same example as before. I want my items to be displayed in a row and at the end of the box.
 
 18. What is CSS grid property?
+The CSS grid property is a property that allows you to set values of multiple other CSS properties. It allows you to arrange your items into rows and/or columns, size those rows/columns evenly or unevenly. etc.
 
 19. Write the parent and two sub-properties used for CSS Grid Property.
+To use a grid, we would use this code: 
+`.class {`
+    `display: grid;`
+`}`
+That would be the parent property. Two sub properties would be the two added onto the one above:
+`.class {`
+    `display: grid;`
+    `grid-column-start: 1;`
+    `grid-column-end: 3;`
+`}`
+This places a grid item at column 1 and lets it end on column line 3.
 
 20. What is the difference between display: flex and display: grid?
+Flexbox was designed for a one-dimmensional layout - either column or row. Grid is designed for two-dimmnesional layouts - rows and columns at the same time.
 
 21. What sub-property we use to divide elements in CSS Grid properties?
+The sub-property would be `grid-template-columns`or `grid-template-rows`. From there, we can add how many boxes we would want by adding a value. For example: `grid-template-columns: 25% 10% 15% 50%`.
 
 22. What unit we use to fractionally divide the element width in CSS Grid property and what are others unit we can use alternatively? (Write a code example)
+The unit to divide an element fractionally with CSS grid would be fr. We can also use percentages,for example: 50% 50%.
+`.class {`
+    `display: grid;`
+    `grid-template-columns: 1fr 1fr 1fr`
+`}`
 
 23. What is the area property in CSS grid we use for the child elements?
 
 24. Which sub-property of display grid you can use to prevent displaying empty columns. Write a code example of that property.
 
 25. Explain the steps to add google fonts to your CSS file and how will you link it to the html file.
-
+First, you want to go to the Google Fonts website (https://fonts.google.com/). Next, you're going to find a font you like. For this example, I am going to use "Roboto Regular 400". Click on the "Select (your font properties here)" and you'll see it add to the boxes on the right. Copy what is in the first box on the right and paste it into the "head" section of your HTML. Finally, if you want to use this font, you need to add it in the css. You would have to select the element you want to have the font. Then go to Google Fonts and copy what is in the second box. Paste into your css after the selected element. It might look something like this:
+`html {`
+    `font-family: 'Roboto', sans-serif;`
+`}` 
 
 
