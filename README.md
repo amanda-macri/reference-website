@@ -138,13 +138,23 @@ The unit to divide an element fractionally with CSS grid would be fr. We can als
 `}`
 
 23. What is the area property in CSS grid we use for the child elements?
+The area property we would use on the child elements is `grid-area`. It accepts the values of the name of grid row start pos (1), grid column start pos (2), grid row end pos (3), and grid column end pos (4). Ex: 
+`.class {`
+    `display: grid;`
+   ` grid-area: 1 / 2 / 3 / 4;`
+`}`
+
 
 24. Which sub-property of display grid you can use to prevent displaying empty columns. Write a code example of that property.
+The property of `grid-auto-columns` will prevent from displaying empty columns. You would have to set the value to `min-content`, which makes the width of empty columns the minimum required to display the content in the grid.
+`.example {`
+    `display: grid;`
+    `grid-template-columns: 1fr 1fr 1fr 1fr 1fr;`
+    `grid-auto-columns: min-content;`
+`}`
 
 25. Explain the steps to add google fonts to your CSS file and how will you link it to the html file.
 First, you want to go to the Google Fonts website (https://fonts.google.com/). Next, you're going to find a font you like. For this example, I am going to use "Roboto Regular 400". Click on the "Select (your font properties here)" and you'll see it add to the boxes on the right. Copy what is in the first box on the right and paste it into the "head" section of your HTML. Finally, if you want to use this font, you need to add it in the css. You would have to select the element you want to have the font. Then go to Google Fonts and copy what is in the second box. Paste into your css after the selected element. It might look something like this:
 `html {`
     `font-family: 'Roboto', sans-serif;`
 `}` 
-
-
