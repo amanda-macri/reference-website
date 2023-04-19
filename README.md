@@ -2,6 +2,8 @@
 
 1. Naming convention for all filenames, paths and folders
 Naming conventions have a few rules, but they are mostly straightforward. Keep everything lowercase. No spaces. Only use letters, numbers and dashes (-).
+Ex: AmAnDa_m@cri_ass1gnment.html : This is a bad example of naming conventions.
+Ex: amanda-macri-assignment.html : This is a good example of naming conventions.
 
 2. Best practices for commit messages
 Commit messages are a way to communicate the changes that have been made in a code document. If there is a bug, spelling error, or more code is added, it will get commited. Keep the summary to under 50 words. Capitalize the first word, unless using conventional commits. Use imperative verbs. For example, "Add Robotto Regular 400 to the class of information". Imperative verbs give off the impression that you are giving an order. It is important to use this, because consistancy is key in these commits. Specify the type of commit used. For example: bugfix, feat, chore, etc. Keep the content direct - You want to get straight to the point. Leave out the extra words, like though, maybe, I think, kinda, etc. You mostly want your commit to answer what and why you did what you did. What did I change? Why did I change it?
